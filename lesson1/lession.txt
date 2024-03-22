@@ -1,0 +1,47 @@
+Structure of Go
+    - must declare package at top of file
+    - start at main()
+    - if want to use more than 1 package must 
+        import (
+            "lib1"
+            "lib2"
+        )
+    - In go lang every variable that we declare it mean we must use it,unless complier will throw error
+    - we can use short term to declare scope variable varName := value (but const cannot delare like that)
+
+Data Type in Go
+    - Number
+        - Integer (uint8,uint16,uint32,uint64,int8,int16,int32,int64,int(4 byte for 32 bit machine, 8byte for 64 bit machine))
+        - Float (float32,float64)
+    - String (string)
+    - Boolean (bool)
+
+Printing
+    - must import "fmt"
+    - print() => normaly print to console
+    - println() => print on console with new line
+    - printf() => formating print on console
+        - %v => default value
+        - %T => type of value
+        - %d => integer
+        - %c => charecter
+        - %s => string
+        - %q => print with qoute
+        - %t => Boolean
+        - %f => floating number
+        - %.2f => floating number with 2 decimal place
+
+User Input from console
+    - must import "fmt"
+    - use Scanf() method to get value => fmt.Scanf("%s", &variable) it mean wait user input some string to store at variable must use & to access pointer
+
+Get type of variable 
+    - use reflect lib to get type Ex. reflect.TypeOf(variable)
+
+Convert type
+    - float and int
+        - can convert by use build-in method float32(), float64(), int()
+    - string
+        - use package strconv
+            - strconv.Itoa() => convert int to string
+            - strconv.Atoi() => convert string to int
