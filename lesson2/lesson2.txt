@@ -1,0 +1,47 @@
+if-else in go
+    - comparison operation
+        - && (and)
+        - || (or)
+        - == (equal)
+        - != (not equal)
+    - must be like this because go want to clean and easy to read so will fixed format if-else
+        if condition {
+            statement
+        }else if condition {
+            statement
+        }else {
+            condition
+        }
+
+switch-case in go
+    - must be like this and can be use with condition
+        switch variable {
+            case value:
+                statement
+            case value:
+                statement
+            defalult:
+                statement
+        }
+
+        switch {
+            case condition:
+                statement
+            case condition:
+                statement
+            defalult:
+                statement
+        }
+
+    - fallthrough mean continue doing if match condition
+
+loop in go
+    - must be like this
+        for init;condition;step {
+            statement
+        }
+    - but can use alternative way for loop
+        for condition {
+            statement
+            step
+        }
