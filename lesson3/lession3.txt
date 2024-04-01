@@ -1,0 +1,39 @@
+Array
+    - var varName [length]type => var arr [5]int , arr := [5]int{1,2,3,4,5}, arr := [...]int{1,2,3}
+    - var varName [length][length]type => var arr [5][3]int , arr := [5][3]int{{1,2,3},{1,2,3},{1,2,3},{1,2,3},{1,2,3}}, arr := [...]int{1,2,3}
+    - by default array if we declare variable without declare value all value will be default zero value
+    - len() => get length of arr
+    - arr[index] => to get and access array
+    - we can loop through index,element := range arr
+
+Slice
+    - element can be add or remove
+    - flexiblw more array
+    - declare
+        - varName := []dataType{value}
+        - varName := make([]<dataType>,len,cap)
+    - append element
+        slice = append(slice,element1,element2,...) => append element
+        slice1 = append(slice1,slice2...) => append slice
+    - copy slice
+        copy(desc_slice,src_slice)
+
+Map
+    - is pair of data by key and value like json
+    - declare
+        - var varName map[<key_datatype>]<value_datatype> => var my_map map[string]int (don't use =)
+        - varName := map[<key_datatype>]<value_datatype>{<pair_data>} => mmap := map[string]string{"en":"English","th":"Thai"}
+    - len() to get lenth of pair_data
+    - get value => 
+        - get only data => value := varName[key]
+        - get data and isFound => value,isFound := varName[key]
+    - add new pair
+        varName[<key>] = <value>
+    - delete
+        delete(varName,<key>)
+    - loop through map
+        for key,value := range varName {
+            
+        }
+
+
