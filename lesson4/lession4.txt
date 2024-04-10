@@ -1,0 +1,17 @@
+Function
+    - declare
+        func funcName(<param>)<return type> {
+            statement
+        }
+        func funcName(n ...int) {
+
+        } => can pass argrument like this funcName(1,2,3,4,5,6,7,8,9,10)
+    - anomynous Function
+        x := func(n int) int {
+            return n*n
+        } 
+        x := func(n int) int {
+            return n*n
+        }(6)
+    - defer statement 
+        => delay exercute until surround statement or function will return 
