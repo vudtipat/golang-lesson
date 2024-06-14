@@ -1,0 +1,10 @@
+Pointer
+    - when we create variable that will reference address on ram
+    - Pointer is variable that hold address of another variable
+    - Operation
+        - &variable => use to get address of variable
+        - *variable => use to get value of address
+Pass Reference to function
+    - to pass address and set value to it like ref in c#
+    - func method(var *varType) => method(&var)        
+    
