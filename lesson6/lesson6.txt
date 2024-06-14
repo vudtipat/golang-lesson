@@ -1,0 +1,24 @@
+Struct
+    - Struct is a data type that likely class becuase it compound data more than 1 property
+    - declare Struct
+        type name struct{
+            property1 dataType
+            property2 dataType
+        }
+    - to access => varName.property
+
+Method
+    - Method is a function of struct
+    - Declarelation
+        func (<reciever>) methodName(param) {
+            statement
+        }
+
+        - example 
+
+        func (c *Circle) calArea() {
+            statement
+        }
+
+    - The way to use
+        structVar.methodName => c.calArea()
