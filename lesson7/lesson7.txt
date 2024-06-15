@@ -1,0 +1,13 @@
+Work with Package
+    - If we want to work with Package we must create go.mod by use this command
+        `go mod init rootpackageName`
+    - naming convention proprty and method
+        - Upper => public
+        - Lower => private
+Interface
+    - Declare interface
+        type interfaceName interface {
+            mathodName1 returnType
+            mathodName2 returnType
+        }
+    
